@@ -1,5 +1,6 @@
 var total = 0;
 var numProductos = 0;
+var ids = 1;
 
 function addfila() {
     var tabla = document.getElementById("tblfactura").getElementsByTagName('tbody')[0];
@@ -19,13 +20,19 @@ function addfila() {
         row.remove();
         numProductos--;
         var contador = document.getElementById("numProductos");
-        contador.innerHTML = numProductos = "<b>" + numProductos + "</b>";
+        contador.innerHTML = "<b>" + numProductos + "</b>";
     }
     celda1.appendChild(botonEliminar);
 
+
+    var caja1 = document.createElement("input");
+    caja1.id="codigo"+ids;
+    caja1.type = "text";
+    celda2.appendChild(caja1);
+
     numProductos++;
-
-
+    ids++;
+    
     var contador = document.getElementById("numProductos");
     contador.innerHTML ="<b>" + numProductos + "</b>";
 
