@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+
+<body>
+
+    <table>
+        
+        <tr>
+            <td>Numero 1 </td>
+
+            <td><input type="number" id="num1" placeholder="numero 1" required></input ></td>
+            <td><label>operaciones</label>
+            <select id="operaciones">
+                <option value="+">suma</option>
+                <option value="-">resta</option>
+                <option value="*">multiplicacion</option>
+                <option value="/">division</option>
+                <option value="!">factorial</option>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Numero 2</td>
+            <td><input type="number" id="num2" placeholder="numero 2" required></input></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"> 
+                <label>resultado:</label>
+                <span id="resultado">0</span>
+            </td>
+            <td align="center" colspan="3"> <button type="button " onclick="calcular()">calcular</button></td>
+        </tr>
+    </table>
+
+
+</body>
+<script src="js/funcionesCalculadora.js"></script>
+
+</html>
