@@ -19,11 +19,16 @@ function getOpciones(cadena) {
     return opciones;
 }
 
-function calcularPago(){
+function calcularPago() {
     var productoSeleccionado = document.getElementById("productos").value;
     var cantidad = document.getElementById("cantidad").value;
     var pagoTotal = productoSeleccionado * cantidad;
-    document.getElementById("resultado").innerText= "$"+pagoTotal.toFixed(2);
+    if (cantidad <0) {
+        alert("La cantidad no puede ser negativa");
+        document.getElementById("resultado").innerText = "$0";
+        return
+    }
+    document.getElementById("resultado").innerText = "$" + pagoTotal.toFixed(2);
 }
 
 
