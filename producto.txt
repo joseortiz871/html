@@ -1,0 +1,7 @@
+01;Carne;15000
+02;Jabon;2500
+03;Arroz;3000
+04;Salsa;2000
+05;Vinagre;1900
+06;Arina;3500
+07;Huevos;5000
