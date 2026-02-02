@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    border: 2px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.interior {
+    width: 22%;
+    height: 40%;
+    border-radius: 50px;
+    box-shadow: 10px 10px #888888;
+}
+
+.interior:hover {
+    background-color: white;
+
+}
+
+.superior {
+    top: 8%;
+}
+
+.inferior {
+    bottom: 8%;
+}
+
+.izquierda {
+    background-color: aquamarine;
+    left: 8%;
+}
+
+.derecha {
+    background-color: aquamarine;
+    right: 0px;
+    right: 8%;
+
+}
+
+.centroarriba {
+    left: 40%;
+    top: 8%;
+    background-color: aquamarine;
+}
+
+.centroabajo {
+    bottom: 8%;
+    left: 40%;
+    background-color: aquamarine;
+}
+
+#id1 {
+    background-color: blue;
+}
+
+.card-back {
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    font-size: 26px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    width: 93%;
+    height: 93%;
+    border-radius: 35px;
+    position:absolute;
+
+}
+
+#id2 {
+
+    background-image: url(../img/1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     font-size: 26px;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+#id3 {
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#id4 {
+    background-image: url(../img/3.jpeg);
+    background-size: cover;
+    background-position: center;
+   display: flex;
+   font-weight: bold;
+   font-size: 26px;
+   background-color: aqua;
+
+}
+
+.voltear:hover {
+    transform: rotateY(180deg);
+}
+
+#id5 {
+    background-image: url(../img/4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#id6 {
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#id7 {
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
